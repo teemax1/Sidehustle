@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 23, 2021 at 06:21 PM
+-- Generation Time: Jul 24, 2021 at 10:31 AM
 -- Server version: 5.1.62
 -- PHP Version: 5.5.9
 
@@ -27,28 +27,25 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `marketitems` (
-  `itemid` int(10) NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `items` varchar(100) NOT NULL,
   `price` int(255) NOT NULL,
-  PRIMARY KEY (`itemid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `marketitems`
 --
 
-INSERT INTO `marketitems` (`itemid`, `items`, `price`) VALUES
+INSERT INTO `marketitems` (`id`, `items`, `price`) VALUES
 (1, 'Chair', 4500),
-(2, 'Marker', 0),
+(2, 'Fish', 250),
 (3, 'Marker', 8888),
-(4, 'Marker', 885),
-(5, 'Marker', 555),
-(6, 'Marker', 555),
-(7, 'Marker', 795),
-(8, 'Marker', 555),
-(9, 'Ginger', 200),
+(4, 'Fire extinguisher', 5000),
+(14, 'Table', 2500),
+(15, 'TV', 2500),
 (10, 'Ginger', 200),
-(11, 'Tomato', 58);
+(13, 'Table', 2500);
 
 -- --------------------------------------------------------
 
